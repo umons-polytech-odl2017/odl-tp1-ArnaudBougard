@@ -5,10 +5,10 @@ class Person {
 	private String name;
 	private int age;
 
-	public Person(){
+	public Person(String name, int age){
 
-		name = "default value";
-		age = 0;
+		this.name = name;
+		this.age = age;
 
 	}
 
