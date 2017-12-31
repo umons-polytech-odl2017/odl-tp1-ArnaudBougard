@@ -2,28 +2,49 @@ package exercise2;
 
 public class Exercise2 {
 
-	// Ajoutez un champ age à chaque instance de la classe Person.
-	// Créez-y une méthode statique "computePopulationSize" pour retourner la taille de la population.
-	// Créez-y une méthode statique "computeAveragePopulationAge" pour calculer l'âge moyen de la population.
-	// Implémentez-y une méthode statique "resetPopulation" pour remettre les compteurs à zéro.
+    static Person createPerson(int age){
 
-	static void createPerson(int age) {
-	}
+        return new Person(age);
 
-	static int computePopulationSize() {
-		// TODO remove comment when implemented
-		// return Person.computePopulationSize();
-		return 0;
-	}
+    }
 
-	static float computeAveragePopulationAge() {
-		// TODO remove comment when implemented
-		// return Person.computeAveragePopulationAge();
-		return 0.0F;
-	}
+    static int computePopulationSize(){
 
-	static void resetPopulation() {
-		// TODO remove comment when implemented
-		// Person.resetPopulation();
-	}
+        return Person.computePopulationSize();
+
+    }
+
+    static float computeAveragePopulationAge(){
+
+        return Person.computeAveragePopulationAge();
+
+    }
+
+    static void resetPopulation(){
+
+        Person.resetPopulation();
+
+    }
+
+    /*public static void main(String[] args){
+
+        Person p1,p2;
+        int a;
+        float b;
+
+        p1=createPerson(20);
+        p2=createPerson(21);
+
+        a=computePopulationSize();
+        System.out.println(a);
+        b=computeAveragePopulationAge();
+        System.out.println(b);
+
+        resetPopulation();
+
+        a=computePopulationSize();
+        System.out.println(a);
+
+    }*/
+
 }
